@@ -13,6 +13,5 @@ int main()
     area = pi * (raio * raio);
     printf("A area da sua circunferencia e: %.2f", area);
 
-
     return 0;
 }

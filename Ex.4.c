@@ -17,5 +17,6 @@ int main(){
         printf("A area do retangulo e:%2.f", area);
 
 
+
     return 0;
 }
