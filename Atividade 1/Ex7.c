@@ -18,7 +18,7 @@ int main()
     ValorImposto = CustoFabrica + (CustoFabrica * PercImpostos / 100);
     CustoConsumidor = CustoFabrica + ValorDistribuidor + ValorImposto;
 
-    printf("\nO custo ao consumidor é: %2.f", CustoConsumidor);
+    printf("\nO custo ao consumidor é: %.2f", CustoConsumidor);
 
     printf("\n\n");
 

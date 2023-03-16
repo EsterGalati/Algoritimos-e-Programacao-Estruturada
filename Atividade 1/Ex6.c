@@ -17,7 +17,7 @@ int main()
     desconto=(reajuste * salario) / 100;
     novosalario=(salario - desconto);
 
-    printf("Seu novo salario e %2.f:",novosalario);
+    printf("Seu novo salario e %.2f:",novosalario);
 
 
     return 0;
