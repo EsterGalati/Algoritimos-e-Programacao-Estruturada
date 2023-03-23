@@ -10,6 +10,10 @@ int main(void)
     {
         printf("Par");
     }
+
+
+
+    
     else
         printf("Ímpar");
 }
