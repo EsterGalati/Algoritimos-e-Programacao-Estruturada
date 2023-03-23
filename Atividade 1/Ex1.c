@@ -3,6 +3,7 @@ despesas eventuais (também solicitadas pelo teclado).Para concluir, o programa 
 lucro da mercadoria*/
 #include <stdio.h>
 
+
 int main()
 {
 
