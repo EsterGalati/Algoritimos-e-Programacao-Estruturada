@@ -1,21 +1,31 @@
 /*VETORES*/
-
 #include <stdio.h>
-
-int main()
-{
-
-    float estudante_1, estudante_2, estudante_3, estudante_4, estudante_5, soma;
-
-    estudante_1 = 10;
-    estudante_2 = 9;
-    estudante_3 = 8;
-    estudante_4 = 7;
-    estudante_5 = 10;
-
-    soma = estudante_1 + estudante_2 + estudante_3 + estudante_4 + estudante_5;
-
-    printf("Media estutandes: %.2f\n", soma / 5);
-
+ 
+#define TAM 5
+ 
+int main(){
+ 
+    float estudante[TAM]={10,9,8,7,10}, soma;
+ 
+    //float estudante[TAM]={7}, soma;
+ 
+    int i=0;
+ 
+    // for(i=0;i<TAM;i++){
+    //     printf("%do estudante nota %.1f\n",i+1,estudante[i]);
+    // }
+ 
+    for(i=TAM-1;i>=0;i--){
+        printf("%do estudante nota %.1f\n",i+1,estudante[i]);
+    }
+ 
+    //pf i = -1
+ 
+    for(i=0;i<TAM;i++){
+        soma = soma + estudante[i];
+    }
+ 
+    printf("Media estudantes: %.2f\n", soma/TAM);
+ 
     return 0;
 }
