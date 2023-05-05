@@ -3,29 +3,24 @@ Imprima o enésimo termo da sequência de Fibonacci. Essa sequência começa no 
 ordem zero, e, a partir do segundo termo, seu valor é dado pela soma dos dois termos
 anteriores. Alguns termos dessa sequência são: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34*/
 #include <stdio.h>
-#include <stdlib.h>
 
-int main(void)
+int main()
 {
-    int n;                         // posição até a qual será lida
-    int seq = 1, seqA = 0, seqAux; // variaveis para armazenar o numero atual e anterior da sequência, e uma auxiliar para trocar esses valores
+    int n, i;
+    int fib[100];
 
-    printf("Quantos termos da sequencia de Fibonacci deseja ver? ");
+    printf("Digite um numero inteiro maior ou igual a zero: ");
     scanf("%d", &n);
 
-    printf("\n0 ");
-    n--;
+    fib[0] = 0;
+    fib[1] = 1;
 
-    while (n)
+    for (i = 2; i <= n; i++)
     {
-        printf("%d ", seq);
-        seqAux = seq;
-        seq += seqA;
-        seqA = seqAux;
-        n--;
+        fib[i] = fib[i - 1] + fib[i - 2];
     }
 
-    printf("\n\n");
+    printf("O %d-esimo termo da sequencia de Fibonacci: %d", n, fib[n]);
 
     return 0;
 }
