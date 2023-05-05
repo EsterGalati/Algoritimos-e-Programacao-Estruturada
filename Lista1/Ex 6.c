@@ -1,26 +1,28 @@
-/**/
 #include <stdio.h>
 
 int main()
 {
-    int i, n;
+    int i, soma = 0;
 
-    printf("Informe um numero inteiro");
-    scanf("%i", &i);
-
-    for (i = 0; i <= n; i++)
+    for (i = 1; i < 1000; i++)
     {
-        if (n % 3 == 0)
+        if (i % 3 == 0 || i % 5 == 0)
         {
-            printf("\n %i -numero multiplo de 3", i);
-        }
-        if (n % 5 == 0)
-        {
-            printf("\n %i -numero multiplo de 5", i);
-        }
-        else
-        {
-            printf("\n %i nao e multiplo de 3 e 5", i);
+            if (i % 3 == 0)
+            {
+                printf("Divisivel por 3\n");
+            }
+            if (i % 5 == 0)
+            {
+                printf("Divisivel por 5\n");
+            }
+
+            printf("%i\n", i);
+            soma += i;
         }
     }
+
+    printf("A soma dos numeros abaixo de 1.000 que sao multiplos de 3 ou 5: %d\n", soma);
+
+    return 0;
 }
