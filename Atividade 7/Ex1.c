@@ -15,7 +15,7 @@ struct estudante
 {
     char nome[MAX_NOME];
     int matricula;
-    int idade;
+    int idade;z
     struct disciplina disciplina;
 };
 
