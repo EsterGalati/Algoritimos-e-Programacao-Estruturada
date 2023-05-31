@@ -15,7 +15,7 @@ struct estudante
 {
     char nome[MAX_NOME];
     int matricula;
-    int idade;z
+    int idade;
     struct disciplina disciplina;
 };
 
@@ -29,7 +29,7 @@ int main()
     printf("Quantos estudantes deseja cadastrar (maximo 20)? ");
     scanf("%d", &num_estudantes);
 
-        for (i = 0; i < num_estudantes; i++)
+    for (i = 0; i < num_estudantes; i++)
     {
         printf("\nEstudante %d:\n", i + 1);
         printf("Nome: ");
@@ -42,7 +42,7 @@ int main()
         scanf("%d", &estudantes[i].disciplina);
         fflush(stdin);
         printf("Nome: ");
-        scanf(" %[^\n]s", &estudantes[i].disciplina.nome); 
+        scanf(" %[^\n]s", &estudantes[i].disciplina.nome);
         fflush(stdin);
         printf("Carga Horaria: ");
         scanf("%d", &estudantes[i].disciplina.carga_horaria);
