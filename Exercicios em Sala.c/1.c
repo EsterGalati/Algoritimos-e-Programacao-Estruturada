@@ -5,6 +5,7 @@
  
 int main(){
  
+ 
     float estudante[TAM]={10,9,8,7,10}, soma;
  
     //float estudante[TAM]={7}, soma;
