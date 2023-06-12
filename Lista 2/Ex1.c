@@ -64,6 +64,7 @@ int main()
 
     int i, j, n1 = 0, n2 = 0;
 
+
     // Cadastro de professores
     for (i = 0; i < MAX_PROFESSOR; i++)
     {
